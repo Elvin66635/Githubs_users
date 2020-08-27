@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:padding="1dp"
+    android:padding="2dp"
     android:id="@+id/swipeContainer"
     tools:context=".controller.MainActivity">
 
