@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         pd.show();
         Service apiInterface = Client.getClient().create(Service.class);
 
-        Call<List<Item>> call = apiInterface.getItemsPage(47);
+        Call<List<Item>> call = apiInterface.getItems("application/vnd.github.v3+json");
         call.enqueue(new Callback<List<Item>>() {
             @Override
             public void onResponse(Call<List<Item>> call, Response<List<Item>> response) {
